@@ -47,7 +47,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ProvisioningKeyCustomResource":{
@@ -365,7 +365,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "MonitoringLambdaFunction":{
@@ -400,7 +400,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ExampleCameraStatusLambdaCameraPairingPermissionProd":{
@@ -515,7 +515,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ProvisioningKeyFunction":{
@@ -550,7 +550,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ExampleCameraPairingLambdaCameraPairingPermissionProd":{
@@ -606,7 +606,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "MonitoringTopic":{
@@ -655,7 +655,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ExampleCameraPairingLambda":{
@@ -690,7 +690,7 @@
                "Fn::GetAtt":"ProvisioningLambdaRole.Arn"
             },
             "Timeout":6,
-            "Runtime":"nodejs8.10"
+            "Runtime":"nodejs10.x"
          }
       },
       "ProvisionThingLambdaFunctionProvisionThingPermissionProd":{
