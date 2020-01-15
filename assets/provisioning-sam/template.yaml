@@ -38,7 +38,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: handler.getStackAvailability
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
       Events:
@@ -52,7 +52,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: handler.provisionThing
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
       Environment:
@@ -76,7 +76,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: cameraHandler.status
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
       Events:
@@ -90,7 +90,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: cameraHandler.pair
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
       Events:
@@ -104,7 +104,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: cameraHandler.shadow
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
       Events:
@@ -120,7 +120,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: cfcustomresources/roleAlias.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
   RoleAliasCustomResource:
@@ -137,7 +137,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: cfcustomresources/provisioningKey.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
   ProvisioningKeyCustomResource:
@@ -175,7 +175,7 @@ Resources:
     Properties:
       CodeUri: src/
       Handler: handler.monitoring
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       Role:
         Fn::GetAtt: ProvisioningLambdaRole.Arn
   MonitoringLambdaInvokePermission:
