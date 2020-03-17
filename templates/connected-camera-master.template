@@ -78,7 +78,7 @@
             }
         },
         "ProvisioningStack": {
-			      "DependsOn":"CopyLambdaStack",
+			"DependsOn":"CopyLambdaStack",
             "Type":"AWS::CloudFormation::Stack",
             "Properties":{
                 "TemplateURL":{
