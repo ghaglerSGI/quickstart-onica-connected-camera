@@ -1,0 +1,30 @@
+project:
+  name: quickstart-onica-connected-camera
+  owner: quickstart-eng@amazon.com
+  package_lambda: false
+  regions:
+  - ap-northeast-1
+  - ap-south-1
+  - ap-southeast-2
+  - eu-central-1
+  - eu-west-1
+  - eu-west-2
+  - us-east-1
+  - us-east-2
+  - us-west-2
+  s3_bucket: ''
+tests:
+  quickstart-onica-connected-camera:
+    parameters:
+      QSS3BucketName: $[taskcat_autobucket]
+    regions:
+    - ap-northeast-1
+    - ap-south-1
+    - ap-southeast-2
+    - eu-central-1
+    - eu-west-1
+    - eu-west-2
+    - us-east-1
+    - us-east-2
+    - us-west-2
+    template: templates/connected-camera-master.template
