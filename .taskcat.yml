@@ -17,6 +17,7 @@ tests:
   quickstart-onica-connected-camera:
     parameters:
       QSS3BucketName: $[taskcat_autobucket]
+      QSS3BucketRegion: $[taskcat_current_region]
     regions:
     - ap-northeast-1
     - ap-south-1
